@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #022431;
+      }
+      h1 {
+        color: #fff;
+        padding: 20px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+      .box-1,
+      .box-2,
+      .box-3 {
+        width: 300px;
+        height: 400px;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        text-align: center;
+        margin: 20px;
+        font-size: 24px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="main-heading">Event Listeners</h1>
+    <div class="container">
+      <div class="boxes box-1">
+        <h1 id="heading">Example1</h1>
+        <button class="btn-1" onclick="alert('I Love JavaScript')">
+          Enter
+        </button>
+      </div>
+      <div class="boxes box-2">
+        <h1 id="heading">Example2</h1>
+        <button class="btn-2">Enter</button>
+      </div>
+      <div class="boxes box-3">
+        <h1 id="heading">Example3</h1>
+        <button class="btn-3">Enter</button>
+      </div>
+      <script src="./concept4.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table, thead, th, tr, td{
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        table{
+            width: 50%;
+            text-align: center;
+        }
+        #second-table,  tr, td{
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+        </style>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <th colspan="2">Name</th>
+            <th>Class</th>
+            <th>School</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>kumari</td>
+                <td>Mahima</td>
+                <td>Guptha</td>
+                <td>11</td>
+                <td>Mvm School</td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="second-table">
+        <tr>
+            <td>Name</td>
+            <td>Class</td>
+            <td rowspan="3"></td>
+        </tr>
+    
+            <tr>
+                <td>Radha</td>
+                <td>10</td>
+                
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td>11</td>
+                
+            </tr>
+
+    </table>
+</body>
+</html>

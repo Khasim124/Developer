@@ -1,0 +1,81 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(45deg, #e90202, #197a8f);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            
+        }
+        h1{
+            margin-bottom: 100px;
+        }
+        .reveal-btn {
+
+            width: 15%;
+            height: 300px;
+            background-color: transparent;
+            border: 3px solid #fff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 24px;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+            border-radius: 25px;
+            padding: 30px;
+            text-align: center;
+            line-height: 250px;
+       
+
+        }
+
+        .hidden-content {
+            
+            width: 70%;
+            height: 300px;
+            border: 3px solid #fff;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 25px; 
+            padding: 30px;
+
+
+        }
+        .hidden-content{
+            display: none;
+        }
+        .hidden-content.revel-btn{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+    <div class="container">
+        <div class="reveal-btn boxes">Reveal More</div>
+        <div class="hidden-content boxes">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi corporis eaque, vero cumque iusto sint exercitationem nulla tempore maxime rerum voluptatum cum, temporibus error doloribus explicabo numquam ducimus repudiandae non quia, alias corrupti accusantium labore nesciunt nisi. Sunt iusto quae quaerat excepturi facilis itaque, aut corporis dolorem libero quam, eligendi nostrum molestias placeat. Repudiandae minus quod similique quia delectus voluptas quisquam vitae aut maiores dolore? Architecto ipsam at maxime itaque sapiente ab vitae, non ea, cumque harum necessitatibus, tempore iste ullam saepe. Consectetur quae, illo corporis sint suscipit accusantium quasi at quos nesciunt provident, voluptatem, odio reprehenderit quaerat natus aliquid!
+        </div>
+    </div>
+    <script src="./concept5.js"></script>
+
+
+</body></html>

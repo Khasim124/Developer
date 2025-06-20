@@ -1,0 +1,90 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #35467a;
+            color: #fff;
+            
+            
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            border: 5px solid #fff;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .div2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            border: 5px solid #fff;
+            border-radius: 20px;
+
+        }
+        .div1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            border: 5px solid #fff;
+            border-radius: 20px;
+            
+        }
+        .button{
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            border: solid 3px #fff;
+            background: none;
+            color: #fff;
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Event Propagation</h1>
+    <p>How event travels to document object model. </p>
+    <ol>
+        <li>Event Capturing</li>
+        <li>Target</li>
+        <li>Event Bubbling</li>
+    </ol>
+    <h2>Event Capturing Phase:</h2>
+    <p>Start from the root travels from the target event bubbling. The addevnentlisners third property will deci`de whether event should bubble or not</p>
+    <div class="container">
+        <div class="div2">
+            2
+            <div class="div1">
+                1
+                <!-- <button>Click</button> -->
+                 <a href="" class="button">Click</a>
+            </div>
+        </div>
+    </div>
+    <script src="eventPropagation.js"></script>
+
+
+</body></html>

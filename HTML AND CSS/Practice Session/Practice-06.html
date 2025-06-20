@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            background: pink;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .product .price {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Customers Frequently Viewed</h1>
+    <div class="product-container" id="product-list"></div>
+
+    <script>
+        const products = [
+            { name: "Samsung Galaxy S24 FE", price: "$547.99", img: "https://m.media-amazon.com/images/I/61dDx7O3sOL._AC_UL480_FMwebp_QL65_.jpg" },
+            { name: "UMIDIGI G9T", price: "$199.99", img: "https://m.media-amazon.com/images/I/616GSePFvrL._AC_UL480_FMwebp_QL65_.jpg" },
+            { name: "Moto G Stylus 5G", price: "$249.99", img: "https://m.media-amazon.com/images/I/71PrJGQnbuL._AC_UL480_FMwebp_QL65_.jpg" },
+            { name: "SAMSUNG Galaxy A05", price: "$99.42", img: "https://m.media-amazon.com/images/I/61I2hhKzTbL._AC_UL480_FMwebp_QL65_.jpg" },
+        ];
+
+        const productList = document.getElementById("product-list");
+        products.forEach(product => {
+            const productDiv = document.createElement("div");
+            productDiv.classList.add("product");
+            productDiv.innerHTML = `
+                <img src="${product.img}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p class="price">${product.price}</p>
+            `;
+            productList.appendChild(productDiv);
+        });
+    </script>
+</body>
+
+</html>
